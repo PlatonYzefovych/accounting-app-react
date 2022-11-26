@@ -1,12 +1,10 @@
-import React from 'react'
-import './CostDate.css'
+import './CostDate.css';
 
-const CostDate = (props) => {
-
-    const month = props.date.toLocaleString('en-GB', { month: 'long' });
+function CostDate(props) {
+    const month = props.date.toLocaleString('eng-GB', { month: 'long' });
     const year = props.date.getFullYear();
-    const day = props.date.toLocaleString('en-GB', { day: '2-digit' });
- 
+    const day = props.date.toLocaleString('eng-GB', { day: '2-digit' });
+
     return (
         <div className='cost-date'>
             <div className='cost-date__month'>{month}</div>
@@ -14,6 +12,6 @@ const CostDate = (props) => {
             <div className='cost-date__day'>{day}</div>
         </div>
     )
-}
+};
 
 export default CostDate;

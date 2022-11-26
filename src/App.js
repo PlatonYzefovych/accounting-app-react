@@ -1,28 +1,26 @@
-import React, { useState } from "react";
 import './index.css';
-import Costs from "./components/costs-component/Costs";
-import NewCost from "./components/new-cost/NewCost";
-import costsList from "./components/costs-list/costs-list";
+import React from "react";
+import Costs from './components/costs/Costs';
+import NewCost from './components/new-cost/NewCost';
 
 function App(props) {
 
-  const [costs, setCosts] = useState(costsList);
-
   const addCostHandler = (cost) => {
-    setCosts((previousCosts) => {
-      return [cost, ...previousCosts]
-    });
+    console.log(cost);
+    console.log('app');
   };
 
   return (
     <div className="app">
-      <div className='app-header'>
-        <h1> Accounting App </h1>
+      <div className="app-header">
+        <h1>Accounting app (beta)</h1>
       </div>
       <div>
         <NewCost onAddCost={addCostHandler} />
       </div>
-      <Costs costs={costs} />
+      <div>
+        <Costs />
+      </div>
     </div>
   );
 };
