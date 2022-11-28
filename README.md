@@ -1,1 +1,1 @@
-# accounting-app-react
+Check the master branch :)
