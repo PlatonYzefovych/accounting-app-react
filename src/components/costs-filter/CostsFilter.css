@@ -12,7 +12,8 @@
   }
   
   .costs-filter label {
-    color: black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }

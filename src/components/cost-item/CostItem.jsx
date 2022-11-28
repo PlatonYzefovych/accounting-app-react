@@ -2,8 +2,6 @@ import './CostItem.css';
 import CostDate from '../cost-date/CostDate';
 
 function CostItem(props) {
-
- 
     return (
         <div className='cost-item'>
             <div>
@@ -13,7 +11,7 @@ function CostItem(props) {
             </div>
             <div className='cost-item__description'>
                 <h2>{props.description}</h2>
-                <div className='cost-item__price'>{props.amount} zł</div>
+                <div className='cost-item__price'>{props.amount}$</div>
             </div>
         </div>
     )
